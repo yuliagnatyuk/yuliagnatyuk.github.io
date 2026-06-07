@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гнатюк Юлія — Портфоліо</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <a href="#hero" class="nav-logo">Юлія<span>✦</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">Про мене</a></li>
+    <li><a href="#projects">Проєкти</a></li>
+    <li><a href="#contact">Контакт</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:0.5rem;">
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">◐ Тема</button>
+    <button class="burger" id="burgerBtn" onclick="toggleMenu()" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">Про мене</a>
+  <a href="#projects" onclick="closeMenu()">Проєкти</a>
+  <a href="#contact" onclick="closeMenu()">Контакт</a>
+</div>
+
+<section id="hero">
+  <div class="container">
+    <div class="hero-bg-text" aria-hidden="true">ЮЛІЯ</div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge">✦ Студентка РДГУ · ІПЗ-31</div>
+        <h1 class="hero-name glitch" data-text="Гнатюк Юлія">
+          Гнатюк<em>Юлія</em>
+        </h1>
+        <p class="hero-sub">Software Engineering · РДГУ · 2026</p>
+        <p class="hero-desc">
+          Студентка третього курсу спеціальності «Інженерія програмного забезпечення» у РДГУ. Цікавлюсь веб-розробкою, алгоритмами та ООП. Будую проєкти, що поєднують функціональність з чистим кодом.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">Мої проєкти →</a>
+          <a href="#contact" class="btn-outline">Зв'язатися</a>
+        </div>
+      </div>
+      <div class="photo-wrap">
+        <div class="photo-frame">
+          <span class="photo-corner"></span>
+          <span class="photo-corner2"></span>
+          <img class="photo-img" src="img/photo.jpg" alt="Гнатюк Юлія">
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">HTML &amp; CSS <span>✦</span></span>
+        <span class="marquee-item">JavaScript <span>✦</span></span>
+        <span class="marquee-item">C# <span>✦</span></span>
+        <span class="marquee-item">Python <span>✦</span></span>
+        <span class="marquee-item">SQL <span>✦</span></span>
+        <span class="marquee-item">Git <span>✦</span></span>
+        <span class="marquee-item">C++ <span>✦</span></span>
+        <span class="marquee-item">OOP <span>✦</span></span>
+
+
+        <span class="marquee-item">HTML &amp; CSS <span>✦</span></span>
+        <span class="marquee-item">JavaScript <span>✦</span></span>
+        <span class="marquee-item">C# <span>✦</span></span>
+        <span class="marquee-item">Python <span>✦</span></span>
+        <span class="marquee-item">SQL <span>✦</span></span>
+        <span class="marquee-item">Git <span>✦</span></span>
+        <span class="marquee-item">C++ <span>✦</span></span>
+        <span class="marquee-item">OOP <span>✦</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-label fade-in">Про мене</div>
+    <h2 class="section-title fade-in fade-in-delay-1">Хто я <em>є</em></h2>
+    <div class="about-grid">
+      <div class="about-text fade-in fade-in-delay-2">
+        <p>Навчаюся на третьому курсі спеціальності 121 «Інженерія програмного забезпечення» в Рівненському державному гуманітарному університеті. Протягом навчання опанувала кілька мов програмування і технологій, які застосовую у навчальних і власних проєктах.</p>
+        <p>Мені цікаво все що стосується алгоритмів, структур даних та ООП. Паралельно займаюсь веб-розробкою — люблю коли сайт виглядає охайно і водночас добре написаний технічно.</p>
+        <p>Під час обчислювальної практики реалізувала алгоритм Краскала, циклічний список, систему керування магазином і цей лендінг — усе на C# та HTML/CSS/JS.</p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-num">3</span>
+            <span class="stat-desc">Рік навчання</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">6</span>
+            <span class="stat-desc">Проєктів</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">8+</span>
+            <span class="stat-desc">Технологій</span>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in fade-in-delay-3">
+        <div class="section-label" style="margin-bottom:1rem;">Навички</div>
+        <div class="skills-grid">
+          <div class="skill-tag"><span class="skill-dot"></span><span class="skill-name">HTML</span><span class="skill-level">базово</span></div>
+          <div class="skill-tag"><span class="skill-dot"></span><span class="skill-name">CSS</span><span class="skill-level">базово</span></div>
+          <div class="skill-tag"><span class="skill-dot"></span><span class="skill-name">JavaScript</span><span class="skill-level">базово</span></div>
+          <div class="skill-tag"><span class="skill-dot"></span><span class="skill-name">C#</span><span class="skill-level">базово</span></div>
+          <div class="skill-tag"><span class="skill-dot"></span><span class="skill-name">C++</span><span class="skill-level">базово</span></div>
+          <div class="skill-tag"><span class="skill-dot"></span><span class="skill-name">Python</span><span class="skill-level">базово</span></div>
+          <div class="skill-tag"><span class="skill-dot"></span><span class="skill-name">SQL</span><span class="skill-level">базово</span></div>
+          <div class="skill-tag"><span class="skill-dot"></span><span class="skill-name">Git</span><span class="skill-level">базово</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="projects-header">
+      <div>
+        <div class="section-label fade-in">Проєкти</div>
+        <h2 class="section-title fade-in fade-in-delay-1" style="margin-bottom:0">Моя <em>робота</em></h2>
+      </div>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-label fade-in">Контакт</div>
+    <h2 class="section-title fade-in fade-in-delay-1">Напишіть <em>мені</em></h2>
+    <div class="contact-inner">
+      <div class="fade-in fade-in-delay-2">
+        <div class="contact-info-row">
+          <div class="contact-info-icon">✉</div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value">gnatyukyulia2005@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-info-icon">✦</div>
+          <div>
+            <div class="contact-info-label">Університет</div>
+            <div class="contact-info-value">РДГУ, ІПЗ-31</div>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-info-icon">◈</div>
+          <div>
+            <div class="contact-info-label">Спеціальність</div>
+            <div class="contact-info-value">121 — Інженерія програмного забезпечення</div>
+          </div>
+        </div>
+        <div class="contact-info-row" style="border-bottom:none;">
+          <div class="contact-info-icon">⬡</div>
+          <div>
+            <div class="contact-info-label">GitHub</div>
+            <div class="contact-info-value"><a href="https://github.com/yuliagnatyuk" target="_blank" style="color:var(--accent);text-decoration:none;">github.com/yuliagnatyuk</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in fade-in-delay-3">
+        <div id="contactForm">
+          <div class="form-group">
+            <label class="form-label" for="fname">Ім'я</label>
+            <input class="form-input" id="fname" type="text" placeholder="Ваше ім'я">
+            <div class="form-error" id="fnameErr">Введіть ваше ім'я</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="femail">Email</label>
+            <input class="form-input" id="femail" type="email" placeholder="your@email.com">
+            <div class="form-error" id="femailErr">Введіть коректний email</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fmessage">Повідомлення</label>
+            <textarea class="form-textarea" id="fmessage" placeholder="Ваше повідомлення..."></textarea>
+            <div class="form-error" id="fmessageErr">Напишіть повідомлення</div>
+          </div>
+          <button class="btn-primary" onclick="submitForm()" style="width:100%;text-align:center;">Надіслати →</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <span class="success-icon">✦</span>
+          <p>Повідомлення збережено!<br>Дякую за звернення — відповім найближчим часом.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="#hero" class="back-top" id="backTop" aria-label="Вгору">↑</a>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-copy">© 2026 Гнатюк Юлія · РДГУ, Рівне</div>
+      <div class="footer-made">Виконано в межах <span>обчислювальної практики</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
